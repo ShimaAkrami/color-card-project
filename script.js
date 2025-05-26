@@ -12,4 +12,21 @@ toggleBtn.addEventListener("click", () => {
   } else {
     localStorage.setItem("darkMode", "disabled");
   }
+  
 });
+
+const colorBtn=document.getElementById('#changeColorBtn'); 
+
+const card=document.querySelector('.card');
+
+const colors=['#f28b82','#4b8ce3','#bbe81a','#cd1ae8','#e34b4b','#40e4a6'];
+
+colorBtn.addEventListener('click',()=>{
+
+const randomColor=colors[Math.floor(Math.random()*colors.length)];
+
+card.style.backgroundColor=randomColor;
+
+}
+
+);

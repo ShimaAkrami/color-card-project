@@ -2,7 +2,7 @@ console.log("started my project...");
 
 const toggleBtn = document.querySelector(".dark-toggle-btn");
 
-if (localStorage.getItem("darkMode" === "enabled")) {
+if (localStorage.getItem("darkMode") === "enabled") {
   document.body.classList.add("dark");
 }
 toggleBtn.addEventListener("click", () => {
@@ -15,7 +15,7 @@ toggleBtn.addEventListener("click", () => {
   
 });
 
-const colorBtn=document.getElementById('#changeColorBtn'); 
+const colorBtn=document.getElementById('changeColorBtn'); 
 
 const card=document.querySelector('.card');
 
